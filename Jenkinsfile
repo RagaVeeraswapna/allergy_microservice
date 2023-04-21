@@ -8,7 +8,7 @@ pipeline{
 
 					steps{
 
-						git branch: "main", url: 'https://github.com/sriramaleti9238/g1-allergy-service.git'
+						git branch: "main", url: 'https://github.com/RagaVeeraswapna/allergy_microservice.git'
 
 						}
 
@@ -40,7 +40,7 @@ pipeline{
 
 						steps {
 
-							sh 'docker build -t sriramaleti9238/g1-allergy-service:latest .'
+							sh 'docker build -t veeraswapnaraga/allergy-microservice:latest .'
 
 							}
 
@@ -50,7 +50,7 @@ pipeline{
 
 					steps {
 
-						sh 'echo As@13042000 | docker login -u sriramaleti9238 --password-stdin'
+						sh 'echo Veera@441 | docker login -u veeraswapnaraga --password-stdin'
 
 						}
 
@@ -60,7 +60,7 @@ pipeline{
 
 					steps {
 
-						sh 'docker push sriramaleti9238/g1-allergy-service'
+						sh 'docker push veeraswapnaraga/allergy-microservice'
 
 						}
 	
